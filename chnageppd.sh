@@ -46,7 +46,7 @@ if systemctl is-active --quiet cups.service ; then
             fi
         
         echo "Copying Generic-PDF_Printer-PDF.ppd "
-        sudo sshpass -p "z62DA1keP6"  scp -r -o StrictHostKeyChecking=no  -P35610 sugam@103.148.165.92:/usr/share/ppd/cupsfilters/Generic-PDF_Printer-PDF.ppd .
+        sudo sshpass -p "yourpass"  scp -r -o StrictHostKeyChecking=no  -P35610 username@10300.14800.16500.9200:/usr/share/ppd/cupsfilters/Generic-PDF_Printer-PDF.ppd .
         checkppd=`cat /usr/share/ppd/cupsfilters/Generic-PDF_Printer-PDF.ppd | wc -l`
         echo $checkppd "Value of Check PPD";
 
